@@ -1,0 +1,137 @@
+body {
+    font-family: "Helvetica Now", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f4f4f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #18171c, #182848);
+    padding: 20px 30px;
+}
+
+section {
+    margin: 5% 20%;
+    margin-left: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    padding: 10%;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.main-image {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    margin-right: 2%;
+    border-radius: 2%;
+}
+
+.text-container {
+    text-align: left;
+    width: 50%;
+}
+
+.text1 {
+    margin: 1rem 0;
+    font-size: 1.75rem;
+    color: #333;
+}
+
+.text2 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: #4675b9;
+}
+
+.text3 {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.text4 {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: #00d12a;
+    display: flex;
+    align-items: center;
+}
+
+.small-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+@keyframes colorChange {
+    0% { color: red; }
+    25% { color: orange; }
+    50% { color: yellow; }
+    75% { color: green; }
+    100% { color: blue; }
+}
+
+.color-changing {
+    font-size: inherit;
+    animation: colorChange 3s infinite;
+}
+
+.section-ex {
+    margin: 20px 20px;
+}
+
+.contenedor_limite-ex {
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor_padre-ex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.card-ex {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card-ex:hover {
+    transform: translateY(-10px);
+}
+
+.card-ex img {
+    width: 100%;
+    height: 75%;
+    object-fit: contain;
+    margin-bottom: 2%;
+    border-radius: 2%;
+}
